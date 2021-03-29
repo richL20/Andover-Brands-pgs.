@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andover Brands/About</title>
-    <link rel="shortcut icon" href="./img/icon.png" />
+    <link rel="shortcut icon" href="./img/icon.jpg" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -34,15 +34,13 @@
 
   <body>
     <!--- NAV -->
-    <nav
-      class="navbar navbar-expand-lg py-1 navbar-light bg-light shadow-sm fixed-top"
-    >
-      <div class="container-fluid px-lg-5">
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <!-- Logo Image -->
           <img
             src="img/dummy-logo-02.png"
-            class="d-block img-fluid nav-logo"
+            class="d-block img-fluid nav-logo pl-lg-5"
             alt="andover-logo"
           />
         </a>
@@ -55,10 +53,10 @@
           aria-label="Toggle navigation"
           class="navbar-toggler"
         >
-          <span class="navbar-toggler-icon"></span>
+          <img src="https://img.icons8.com/ios-filled/35/000000/menu--v1.png" />
         </button>
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto pr-4">
             <li class="nav-item">
               <a href="index.html" class="nav-link">HOME</a>
             </li>
@@ -66,7 +64,7 @@
               <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
             </li>
             <li class="nav-item active">
-              <a href="#" class="nav-link"
+              <a href="#" class="nav-link act"
                 >ABOUT<span class="sr-only">(current)</span></a
               >
             </li>
@@ -87,18 +85,20 @@
       </div>
     </nav>
     <!-- ABOUT -->
-    <section id="about" class="offset">
-      <div class="container">
+    <section id="about">
+      <div class="container background">
         <div
           data-aos="fade-down"
-          data-aos-easing="linear"
+          data-aos-easing="ease-in"
           data-aos-duration="1000"
         >
-          <h2 class="title text-center">ABOUT US</h2>
+          <h1 class="title text-center">About Us</h1>
         </div>
-
         <div class="heading-underline mb-5"></div>
-        <p class="lead lg-p">
+		<div data-aos="zoom-in"
+		data-aos-easing="linear"
+		data-aos-duration="1000">
+        <p class="lead text-center">
           Andover Brands is a collection of brands developed over 30 years and
           represents 30,000+ individual products. We strive to build a portfolio
           of brands that bring color, style, comfort and ease to everyday life.
@@ -106,161 +106,136 @@
           supplies them to ecommerce, independent gift, specialty stores and
           major retailers.
         </p>
+	</div>
         <div
           data-aos="zoom-in"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-duration="800"
         >
-          <h3 class="text-center pt-5">OUR LOCATIONS</h3>
+          <h2 class="text-center pt-5">OUR LOCATIONS</h2>
         </div>
         <div class="sub-underline"></div>
+      </div>
+      <section id="locations" class="container-fluid px-5 my-auto">
+        <!-- row-1 -->
         <div class="card-deck pb-5">
-          <div class="card">
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <img
-                class="img-fluid d-block card-img-top"
-                src="img/location_one.jpg"
-                alt="Card image cap"
-              />
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fas fa-map-marker-alt"></i> Tukwila Office
-                </h5>
-                <hr class="hr-about" />
-                <address class="card-text">
-                  Written by
-                  <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
-                  Visit us at:<br />
-                  Example.com<br />
-                  Box 564, Disneyland<br />
-                  USA
-                </address>
-              </div>
+          <!--Tukwila OFFICE -->
+          <div class="card" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+            <img
+              class="img-fluid d-block card-img-top"
+              src="img/tukwila.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-map-marker-alt"></i> Tukwila Office
+              </h5>
+              <hr class="hr-about" />
+              <address class="card-text">
+                18125 Andover Park West<br />
+                Tukwila, WA 98188
+              </address>
             </div>
           </div>
-          <div class="card">
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <img
-                class="img-fluid d-block card-img-top"
-                src="img/location-two.jpg"
-                alt="Card image cap"
-              />
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fas fa-map-marker-alt"></i> Georgetown
-                </h5>
-                <hr class="hr-about" />
-                <address class="card-text">
-                  Written by
-                  <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
-                  Visit us at:<br />
-                  Example.com<br />
-                  Box 564, Disneyland<br />
-                  USA
-                </address>
-              </div>
+          <!-- Tukwila Warehouse-->
+          <div class="card" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+            <img
+              class="img-fluid d-block card-img-top"
+              src="img/tukwila-warehouse.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-map-marker-alt"></i> Tukwila Warehouse
+              </h5>
+              <hr class="hr-about" />
+              <address class="card-text">
+                6700 Riverside Drive<br />
+                Tukwila, WA 98188
+              </address>
             </div>
           </div>
-          <div class="card">
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <img
-                class="img-fluid d-block card-img-top"
-                src="img/location_one.jpg"
-                alt="Card image cap"
-              />
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fas fa-map-marker-alt"></i> Redlands
-                </h5>
-                <hr class="hr-about" />
-                <address class="card-text">
-                  Written by
-                  <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
-                  Visit us at:<br />
-                  Example.com<br />
-                  Box 564, Disneyland<br />
-                  USA
-                </address>
-              </div>
+
+          <!-- Georgrtown Facility-->
+          <div class="card " data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+            <img
+              class="img-fluid d-block card-img-top"
+              src="img/Georgetown.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-map-marker-alt"></i> Georgetown Facility
+              </h5>
+              <hr class="hr-about" />
+              <address class="card-text">
+                4435 Colorado Ave S.<br />
+                Seattle, WA 98134
+              </address>
             </div>
           </div>
-          <div class="card">
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <img
-                class="img-fluid d-block card-img-top"
-                src="img/location-two.jpg"
-                alt="Card image cap"
-              />
-            </div>
-            <div
-              data-aos="zoom-in"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <div class="card-body">
-                <h5 class="card-title">
-                  <i class="fas fa-map-marker-alt"></i> Sumner Warehouse
-                </h5>
-                <hr class="hr-about" />
-                <address class="card-text">
-                  Written by
-                  <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
-                  Visit us at:<br />
-                  Example.com<br />
-                  Box 564, Disneyland<br />
-                  USA
-                </address>
-              </div>
+          <!-- Redlands Facility -->
+          <div class=" card" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+            <img
+              class="img-fluid d-block card-img-top"
+              src="img/redlands.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-map-marker-alt"></i> Redlands Facility
+              </h5>
+              <hr class="hr-about" />
+              <address class="card-text">
+                26763 San Bernardino Ave. Suite B<br />
+                Redlands, CA 92374
+              </address>
             </div>
           </div>
-        </div>
+          <div class="card" data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+            <img
+              class="img-fluid d-block card-img-top"
+              src="img/sumner.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="fas fa-map-marker-alt"></i> Sumner Warehouse
+              </h5>
+              <hr class="hr-about" />
+              <address class="card-text">
+                1607 136th Ave. E<br />
+                Sumner, WA 98390
+              </address>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container background">
         <div class="text-center">
-          <h3>OVERSEAS OPERATIONS</h3>
+          <div
+            class="pt-5"
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <h3 class="">OVERSEAS OPERATIONS</h3>
+          </div>
           <div class="sub-underline"></div>
-          <!--Grid row-->
           <div class="row">
-            <!--Grid column-->
             <div class="col-md-12 mb-4">
-              <!--Card-->
-              <div class="card card-cascade narrower">
-                <!--Card image-->
-                <div
-                  class="view view-cascade gradient-card-header blue-gradient"
-                >
+              <div class="card">
+                <div>
                   <h5 class="pt-4">
                     France <span><small>-</small></span> India
                     <span><small>-</small></span> Italy
@@ -271,31 +246,16 @@
                     <span><small>-</small></span> China
                   </h5>
                 </div>
-                <!--/Card image-->
-
-                <!--Card content-->
-                <div class="card-body card-body-cascade text-center">
-                  <!--Google map-->
-                  <div
-                    id="map-container-google-9"
-                    class="z-depth-1-half map-container-5"
-                    style="height: 275px"
-                  >
-                    <iframe
-                      src="https://www.google.com/maps/d/embed?mid=1kLX7mMSMlFF7yWBNCGfam4MszDGbKhLZ&hl=en"
-                      frameborder="0"
-                      style="border: 0"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+                <div class="card-body">
+                  <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1UqRbm6fP9_nwilLuOgwefs4eQz6UKATQ"
+                    width="75%"
+                    height="450"
+                  ></iframe>
                 </div>
-                <!--/.Card content-->
               </div>
-              <!--/.Card-->
             </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </div>
         <div
           class="arrow py-5"
@@ -312,46 +272,59 @@
     </section>
     <!-- Contact -->
     <section id="contact" class="">
-      <div class="container">
-        <div data-aos="zoom-in"
-        data-aos-easing="linear"
-        data-aos-duration="1000">
-        <h2 class="text-center pt-3">CONTACT</h2>
+      <div class="container ">
+        <div
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          <h2 class="text-center pt-3">CONTACT</h2>
         </div>
-        <div data-aos="zoom-in-up"
-        data-aos-easing="linear"
-        data-aos-duration="1000">        
-        <div class="heading-underline mb-5"></div>
+        <div
+          data-aos="zoom-in-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          <div class="heading-underline mb-5"></div>
         </div>
         <div class="row text-center ny-auto">
-          <div class="col-lg-4" data-aos="zoom-in"
-          data-aos-easing="linear"
-          data-aos-duration="1000">
+          <div
+            class="col-lg-4"
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <h4>
               <img
-                src="https://img.icons8.com/ios/35/ffffff/phone.png"
+                src="https://img.icons8.com/ios/35/f4cf7f/phone.png"
                 class="pr-1"
               />
               (123) 456-7890
             </h4>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in"
-          data-aos-easing="linear"
-          data-aos-duration="1000">
+          <div
+            class="col-lg-4"
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <h4>
               <img
-                src="https://img.icons8.com/ios/35/ffffff/secured-letter--v1.png"
+                src="https://img.icons8.com/ios/35/f4cf7f/secured-letter--v1.png"
                 class="pr-2"
               />
               andover@gmail.com
             </h4>
           </div>
-          <div class="col-lg-4 my-auto" data-aos="zoom-in"
-          data-aos-easing="linear"
-          data-aos-duration="1000">
+          <div
+            class="col-lg-4 my-auto"
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <h4>
               <img
-                src="https://img.icons8.com/ios/40/ffffff/internet--v1.png"
+                src="https://img.icons8.com/ios/40/f4cf7f/internet--v1.png"
               />
               Tukwila, WA
             </h4>
@@ -359,9 +332,7 @@
         </div>
       </div>
     </section>
-
     <!-- FOOTER  -->
-
     <footer>
       <div class="container">
         <div class="row">
