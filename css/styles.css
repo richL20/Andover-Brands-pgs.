@@ -80,6 +80,20 @@ h1, h2 {
   background-color: #73808a;
 }
 
+.nav-link {
+  color: ghostwhite !important;
+  position: relative;
+  font-size: 1.05rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.act {
+  color: #f4cf7f !important;
+}
+
 /*===== HOME PAGE ======*/
 .bottom {
   padding: 0 3px;
@@ -269,11 +283,10 @@ address {
   padding: 50px 0 20 0;
 }
 
-#contact h2 {
-  padding-top: 20px;
-  font-size: 2.5rem;
+.contact-title {
+  padding-top: 50px;
+  font-size: 2.10rem;
   font-weight: normal;
-  color: ghostwhite;
 }
 
 #contact h4 {
@@ -366,6 +379,7 @@ footer {
   /*-- home --*/
   #home {
     background-color: #8cbfc4;
+    min-height: 100vh;
   }
   .header-two h1 {
     font-size: 3.0rem;
@@ -392,8 +406,8 @@ footer {
     opacity: 1;
   }
   /*-- portfolio --*/
-  .img-cov {
-    width: 100%;
+  .cover {
+    width: 90%;
   }
   /*-- about --*/
   #locations {
