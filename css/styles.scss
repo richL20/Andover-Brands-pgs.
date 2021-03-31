@@ -1,5 +1,6 @@
 /*===== SCSS VARIABLES ======*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@300&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap');
 
 $darkBackground : #73808a;
 
@@ -29,9 +30,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
- font-family: 'Poppins', sans-serif;
+  font-family: 'Catamaran', sans-serif;
+ 
   
-  font-weight:400;
+  
 
 }
 
@@ -256,6 +258,9 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 5px 9px rgba(0,0,0,.06);
 
 
 /*===== NEWS =======*/
+
+
+
 /*===== CAREERS ======*/
 #careers {
   width: 100%;
